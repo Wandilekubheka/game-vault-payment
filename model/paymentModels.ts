@@ -1,0 +1,21 @@
+import TransactionStatus from "./transactionStatus";
+
+// we won't accept amount in the request body for security reasons
+type PaymentRequest = {
+  currency: string;
+  //TODO: decode user token to get user id
+  userToken: string;
+  // product id to identify what is being purchased so we can look up the amount on the server
+  productId: string;
+};
+
+// haven't really thought about what to return here
+type PaymentResponse = {
+  status: TransactionStatus;
+  id: string;
+  amount: number;
+  currency: string;
+  paymentMethod: string;
+  createdAt: Date;
+};
+export { PaymentRequest, PaymentResponse };
