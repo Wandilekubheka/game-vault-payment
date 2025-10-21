@@ -11,11 +11,9 @@ type PaymentRequest = {
 
 // haven't really thought about what to return here
 type PaymentResponse = {
+  paymentId: string;
   status: TransactionStatus;
-  id: string;
-  amount: number;
-  currency: string;
-  paymentMethod: string;
   createdAt: Date;
+  paymentUrl: string;
 };
 export { PaymentRequest, PaymentResponse };
