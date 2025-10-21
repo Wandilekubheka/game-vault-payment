@@ -1,0 +1,33 @@
+{
+  "name": "game-vault-server",
+  "version": "1.0.0",
+  "description": "\"# game-vault-payment\"",
+  "homepage": "https://github.com/Wandilekubheka/game-vault-payment#readme",
+  "bugs": {
+    "url": "https://github.com/Wandilekubheka/game-vault-payment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wandilekubheka/game-vault-payment.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node --esm app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "firebase-admin": "^13.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

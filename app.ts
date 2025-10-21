@@ -1,5 +1,5 @@
-import router from "./routes/paymentRoutes";
 import express from "express";
+import { router } from "./routes/paymentRoutes.js";
 
 const app = express();
 app.use(express.json());

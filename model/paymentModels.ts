@@ -1,4 +1,4 @@
-import TransactionStatus from "./transactionStatus";
+import TransactionStatus from "./transactionStatus.js";
 
 // we won't accept amount in the request body for security reasons
 type PaymentRequest = {
