@@ -15,5 +15,13 @@ type PaymentResponse = {
   status: TransactionStatus;
   createdAt: Date;
   paymentUrl: string;
+  statusCode: number;
 };
-export { PaymentRequest, PaymentResponse };
+
+type PaymentResponseError = {
+  error: string;
+  statusCode: number;
+  description?: string;
+};
+
+export { PaymentRequest, PaymentResponse, PaymentResponseError };
